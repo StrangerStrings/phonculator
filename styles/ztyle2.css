@@ -1,0 +1,146 @@
+.container{
+  width: 49.99vw;
+  height: 100vh;
+  display: inline-block;
+}
+
+.expandable{
+  flex-grow: 1;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.main-right{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  background-image: url('../images/background2.png');
+  background-position: right;
+  /* background-size: 100% 100%; */
+  background-size: cover;
+}
+
+.main-right .main{
+  flex-basis: 600rem;
+}
+
+
+
+.right-handset-div{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: baseline;
+  padding-bottom: 30rem;
+  padding-left: 10rem;
+  overflow: hidden;
+  flex: 0 0 150rem;
+}
+.right-wire{
+  margin: 0 -11rem 0 -12rem;
+  padding: 50rem 0 15rem 0;
+}
+.right-handset{
+  transition: padding 0.2s;
+}
+
+
+.speechbubbles{
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.bubbles-div{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.questions{
+  font-size: 17rem;
+  font-family: sans-serif;
+  color: #343940;
+  border: 4rem #C0D2EE solid;
+  background-color: #F2F5FB;
+  border-radius: 20rem;
+  margin: 8rem 0 ;
+  padding: 5rem 16rem;
+  line-height: 24rem;
+  letter-spacing: 1.5rem;
+  min-width: 150rem;
+  white-space: pre-line;
+}
+.spacer{
+  margin: 30rem 0 ;
+}
+
+.sun-div{
+  align-self: flex-start;
+  position:relative;
+}
+.sun{
+  position: absolute;
+  height: 140rem;
+  width: 140rem;
+  background-color: #E1394C;
+  /* border: solid 13rem #B8C5DA; */
+  border: solid 13rem #F4862F;
+  border-radius: 100rem;
+  top: 20rem;
+  right: 20rem;
+  z-index:1;
+  font-size: 25rem;
+  text-align: center;
+  padding-top: 39rem;
+  font-family: sans-serif;
+  color: #E1394C;
+}
+.sun:hover{
+  color: #F4862F;
+  cursor: pointer;
+}
+.sunshine{
+  position: absolute;
+  height: 120rem;
+  width: 120rem;
+  background-color: #F4862F;
+  border-radius: 100rem;
+  top: 30rem;
+  right: 30rem;
+  transition: all 0.7s
+}
+.enlarge2{
+  transform: scale(14);
+}
+.answer{
+  font-size: 19rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #E1394C;
+  border: 5rem #F4862F solid;
+  background-color: #F4F5Fa;
+  border-radius: 20rem;
+  margin: 116rem 160rem 0 0;
+  padding: 5rem 13rem;
+  line-height: 24rem;
+  letter-spacing: 1.5rem;
+}
+
+
+.hidden{
+  display: none;
+}
+
+
+
+
+
+
+
+
+/* , */

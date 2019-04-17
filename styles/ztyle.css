@@ -1,0 +1,259 @@
+html{
+  font-size: 1px;
+}
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 49.99vw;
+  height: 100vh;
+  min-height: 500rem;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.expandable{
+  flex-grow: 1;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.main-left{
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.main-left{
+  background-color: #516F8C;
+  border-right: #202020 6rem solid;
+}
+.main-left .main{
+  flex-basis: 600rem;
+}
+
+
+
+.moon-div{
+  padding: 25rem 0 0 25rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 190rem;
+}
+
+.moon img{
+  width:140rem;
+  height: auto;
+  position: absolute;
+  z-index:1;
+}
+
+.moon{
+  position:relative;
+}
+
+.moonshine{
+  position:absolute;
+  top: 10rem;
+  left:10rem;
+  width: 120rem;
+  height: 120rem;
+  background-color: #B9D1E6;
+  border-radius: 100rem;
+  transition: all 0.7s ease-in-out;
+}
+.enlarge{
+  transform: scale(1.3);
+}
+
+
+
+  /* .letter-stnd {
+  border-color: #92DACC;
+  background-color: #FFF9ca;
+  color: #624D74;
+  transition: all 0s; }
+  .letter-stnd.pressed {
+    background-color: #92DACC; }
+  .letter-stnd:not(.pressed) {
+    transition: background-color 0.8s; } */
+
+
+
+.left-handset-div{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: baseline;
+  flex: 0 0 156rem;
+}
+.left-wire{
+  margin: 0 -15rem 0 -15rem;
+  padding: 70rem 0 35rem 0;
+}
+.left-handset{
+  transition: padding 0.2s;
+}
+.bob{
+  padding-bottom: 10px;
+}
+.bob2{
+  padding-bottom: 6px;
+}
+
+
+
+.dial-div{
+  padding-left: 206rem;
+  margin-top: -40rem;
+}
+.dial-circle{
+  height:400rem;
+  width:400rem;
+  border-radius: 50%;
+  border: 35rem #202020 solid;
+  background-color: #E8E8E8;
+  position: relative;
+}
+.dial{
+  width: 336rem;
+  height:auto;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+}
+.zindex{
+  z-index: 1;
+}
+
+.dial:not(.rotated) {
+  transition: all 1.2s; }
+
+.rotate1{transform: rotate(23deg);}
+.rotate2{transform: rotate(52deg);}
+.rotate3{transform: rotate(82deg);}
+.rotate4{transform: rotate(112deg);}
+.rotate5{transform: rotate(143deg);}
+.rotate6{transform: rotate(173deg);}
+.rotate7{transform: rotate(203deg);}
+.rotate8{transform: rotate(233deg);}
+.rotate9{transform: rotate(263deg);}
+.rotate0{transform: rotate(293deg);}
+.rotatenull{transform: rotate(323deg);}
+
+
+
+.dial-circle div{
+  position: absolute;
+  font-size: 40rem;
+  color: #464646;
+}
+.number1{top: 145rem;left: 292rem;}
+.number2{top: 81rem; left: 274rem;}
+.number3{top: 34rem; left: 227rem;}
+.number4{top: 15rem; left: 158rem;}
+.number5{top: 34rem; left: 89rem; }
+.number6{top: 81rem; left: 42rem; }
+.number7{top: 145rem;left: 24rem; }
+.number8{top: 211rem;left: 42rem; }
+.number9{top: 258rem;left: 89rem; }
+.number0{top: 278rem;left: 158rem;}
+.number {top: 258rem;left: 227rem;}
+
+.fingerstop{
+  position: absolute;
+  width: 70rem;
+  height:auto;
+  top: 223rem;
+  left: 256rem;
+  z-index:2;
+}
+
+.dial-square{
+  margin-top: -200rem;
+  height: 170rem;
+  width: 400rem;
+  background-color: #202020;
+}
+
+
+
+
+
+.base-div{
+  padding-left: 152rem;
+}
+.base{
+  height: 115rem;
+  width:512rem;
+  background-color: #202020;
+  border-radius: 30rem 30rem 0 0 ;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+}
+.operator{
+  border: 5rem #464646 solid;
+  border-radius: 20rem;
+  padding: 3rem 6rem;
+  margin: 0 8rem;
+  color:#B9B9B9;
+  font-size: 40rem;
+  width: 45rem;
+  text-align: center;
+  font-family: sans-serif;
+}
+.equals{
+  border: 6rem #464646 solid;
+  border-radius: 20rem;
+  padding: 5rem 3rem;
+  color:#B9B9B9;
+  font-size: 55rem;
+  margin: 0 20rem;
+  z-index: 1;
+  text-align: center;
+}
+
+.clickable:hover{
+  cursor: pointer;
+  font-weight: 900;
+}
+.clickable.operator:hover{
+  border-width: 6rem;
+}
+.clickable.equals:hover{
+  border-width: 7rem;
+}
+
+.unclickable{
+  cursor:default !important;
+  font-weight: normal !important;
+}
+.unclickable.operator{
+  border-width: 5rem !important;
+}
+.unclickable.equals{
+  border-width: 6rem !important;
+}
+
+
+
+
+
+
+
+
+.btn{
+  width:50; height:100%;
+  background-color: #DDE6F7;
+  border-radius: 20%;
+}.btn1{
+  width:50; height:100%;
+  background-color: #bbE6F7;
+  border-radius: 20%;
+}
